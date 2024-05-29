@@ -1,0 +1,55 @@
+{% extends 'base2.html' %}
+{% block code %}
+    <div class="hist">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>{{col.0}}</th>
+          <th>{{col.1}}</th>
+          <th>{{col.2}}</th>
+          <th>{{col.3}}</th>
+          <th>{{col.4}}</th>
+          <th>{{col.5}}</th>
+          <th>{{col.6}}</th>
+          <th>{{col.7}}</th>
+          <th>{{col.8}}</th>
+          <th>{{col.9}}</th>
+          <th>{{col.10}}</th>
+          <th>{{col.11}}</th>
+          <th>{{col.12}}</th>
+          <th>{{col.13}}</th>
+          <th>{{col.14}}</th>
+          <th>{{col.15}}</th>
+          <th>{{col.16}}</th>
+          <th>{{col.17}}</th>
+          <th>Result</th>
+        </tr>
+        
+        {% for i in data %}
+        <tr>
+          <td>{{i.a}}</td>
+          <td>{{i.b}}</td>
+          <td>{{i.c}}</td>
+          <td>{{i.d}}</td>
+          <td>{{i.e}}</td>
+          <td>{{i.f}}</td>
+          <td>{{i.g}}</td>
+          <td>{{i.h}}</td>
+          <td>{{i.i}}</td>
+          <td>{{i.j}}</td>
+          <td>{{i.k}}</td>
+          <td>{{i.l}}</td>
+          <td>{{i.m}}</td>
+          <td>{{i.n}}</td>
+          <td>{{i.o}}</td>
+          <td>{{i.p}}</td>
+          <td>{{i.q}}</td>
+          <td>{{i.r}}</td>
+          <td>{{i.s}}</td>
+          <td>{{i.out}}</td>
+        </tr>
+        {% endfor %}
+      
+      </table>
+    </div>
+{% endblock %}

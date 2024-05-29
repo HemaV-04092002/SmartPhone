@@ -1,0 +1,67 @@
+{% extends 'base2.html' %}
+{% block code %}
+    <div class="res">
+      {% if msg == "Not addicted." %}
+      <ul>
+        <li>
+            <h2>{{msg}}</h2>
+        </li>
+        <li>
+          <h2>Score of Result {{score}}%</h2>
+      </li>
+        <li>
+            <b>Diversify Usage:</b> Explore various activities beyond smartphone use—exercise, hobbies, socializing—to reduce reliance on the device for fulfillment.
+        </li>
+        <li><b>Set Boundaries:</b> Implement screen time limits and designated "phone-free" zones to establish a healthy balance in daily routines.</li>
+      <li><b>Seek Support:</b> Engage in offline activities with friends or support groups to foster connections and minimize smartphone dependence.</li>
+      <li><b>Mindful Usage:</b> Practice mindfulness techniques, like meditation, to be more aware of phone usage and prioritize meaningful interactions offline.</li>
+
+    </ul>
+      {% endif %}
+
+
+      {% if msg == "Maybe addicted." %}
+      <ul>
+        <li>
+            <h2>{{msg}}</h2>
+        </li>
+
+        <li>
+          <h2>Score of Result {{score}}%</h2>
+      </li>
+
+        <li><b>Awareness:</b> Reflect on usage patterns, set limits, and notice triggers leading to excessive smartphone reliance for balanced screen time.</li>
+
+        <li> <b>Diversify Activities:</b> Engage in hobbies, exercise, or social interactions offline to reduce dependency on smartphone usage.</li>
+            
+        <li> <b> Digital Detox:</b> Plan periodic breaks from screens, designate tech-free zones, and explore activities promoting mindfulness and relaxation.</li>
+            
+        <li>  <b>Seek Support:</b> Consider seeking guidance from professionals or using apps/tools for managing screen time and fostering healthy habits.</li>
+        
+    </ul>
+      {% endif %}
+
+
+      {% if msg == "addicted" %}
+      <ul>
+        <li>
+            <h2>{{msg}}</h2>
+        </li>
+
+        <li>
+          <h2>Score of Result {{score}}%</h2>
+      </li>
+
+       <li><b>Limit Screen Time:</b> Set strict time boundaries, use apps to track usage, and gradually decrease screen time for a healthier balance.</li>
+
+       <li><b>Engage Offline:</b> Prioritize activities without screens—exercise, hobbies, socializing—to reduce dependency on smartphone interaction.</li>
+
+       <li><b>Mindful Usage:</b> Reflect on the purpose of phone usage. Practice mindfulness to be conscious and intentional about screen time.</li>
+
+       <li><b>Seek Support:</b> Consider professional help or support groups for addiction management. Open up to friends/family about the struggle for assistance.</li>
+    </ul>
+      {% endif %}
+
+
+    </div>
+{% endblock %}
